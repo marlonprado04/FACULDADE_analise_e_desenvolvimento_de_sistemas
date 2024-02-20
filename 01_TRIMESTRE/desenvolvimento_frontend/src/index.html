@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletrônicos</title>
+    <!-- Exemplo de código CSS interno  -->
+    <style>
+        p { 
+            color: green;
+        }
+    </style>
+
+    <!-- Exemplo de código CSS externo -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Eletrônicos</li>
+                <li>Apresentações</li>
+                <li>Contados</li>
+            </ul>
+        </nav>
+
+        <!-- Exemplo de código CSS inline -->
+        <h1 style="color:red">Encontre os melhores eletrônicos com os melhores preços e maior qualidade!</h1>
+    </header>
+
+    <section>
+        <h2>PS5</h2>
+
+        <p style="color:red">O PS5 é um console de última geração com recursos avançados úteis para jogar qualquer jogo da atualidade,
+            você pode conferir as especificações <a href="https://www.playstation.com/pt-br/ps5/">no site da Sony</a>
+        </p>
+        <p>O PS5 é um console de última geração com recursos avançados úteis para jogar qualquer jogo da atualidade,
+            você pode conferir as especificações <a href="https://www.playstation.com/pt-br/ps5/">no site da Sony</a>
+        </p>
+
+        <p>O PS5 é um console de última geração com recursos avançados úteis para jogar qualquer jogo da atualidade,
+            você pode conferir as especificações <a href="https://www.playstation.com/pt-br/ps5/">no site da Sony</a>
+        </p>
+
+        <section>
+            <figure>
+                <!-- Tag de imagem -->
+                <img src="./img/playstation-5.jpeg" alt="Imagem ilustrativa do Playstation 5">
+                <!-- Tag de legenda para a imagem -->
+                <figcaption>Playstation 5</figcaption>
+            </figure>
+
+            <figure>
+                <!-- Tag de imagem -->
+                <img src="./img/nintendo-switch.jpeg" alt="Imagem ilustrativa do Nintendo Switch">
+                <!-- Tag de legenda para a imagem -->
+                <figcaption>Nintendo Switch</figcaption>
+            </figure>
+
+            <figure>
+                <!-- Tag de imagem -->
+                <img src="./img/xbox-series-x.jpeg" alt="Imagem ilustrativa do Xbox Series X">
+                <!-- Tag de legenda para a imagem -->
+                <figcaption>Xbox Series X</figcaption>
+            </figure>
+
+        </section>
+        <!-- Tag de linhapara separar o texto -->
+    </section>
+
+
+    <section>
+
+        <video width="500px" controls>
+            <source src="./video/presentation-xbox-series-x.mp4" type="video/mp4">
+            Seu navegador não suporta este formato de vídeo. <a href="./video/presentation-xbox-series-x.mp4">Clique
+                aqui para baixar</a>
+        </video>
+    </section>
+
+    <section>
+        <!-- Tabalea -->
+        <table border>
+            <!-- Descrição da tabela -->
+            <caption>Produtos e seus valores</caption>
+
+            <!-- Cabeçalho da tabela -->
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+
+            <!-- Corpo da tabela -->
+            <tbody>
+                <tr>
+                    <td>Playstation 5</td>
+                    <td>R$ 5000</td>
+                </tr>
+                <tr>
+                    <td>Xbox Series X</td>
+                    <td>R$ 4000</td>
+                </tr>
+                <tr>
+                    <td>Nintendo Switch</td>
+                    <td>R$ 3000</td>
+                </tr>
+            </tbody>
+
+            <!-- Rodapé da tabela -->
+            <tfoot>
+                <tr>
+                    <td>Produto</td>
+                    <td>Valor</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h2>Orçamento</h2>
+        <form method="GET" action="">
+
+            <fieldset>
+                <legend>Dados do usuário</legend>
+                <label for="nome">Nome</label>
+                <br>
+                <input type="text" name="name" id="name">
+                <br><br>
+
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email">
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados do orçamento</legend>
+                <label for="date-of-pay">Data do pagamento</label>
+                <br>
+                <input type="date" name="date-of-pay" id="date">
+                <br><br>
+
+                <label for="date-of-withdrawal">Data de retirada</label>
+                <br>
+                <input type="date" name="date-of-withdrawal" id="date">
+                <br><br>
+
+                <label for="quantity">Quantidade</label>
+                <br>
+                <input type="number" name="quantity" id="quantity">
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend for="day-of-week">Qual melhor dia para contato?</legend>
+
+                <input type="checkbox" name="sunday" id="sunday" value="sunday"> Domingo
+                <br><input type="checkbox" name="monday" id="monday" value="monday"> Segunda-feira
+                <br><input type="checkbox" name="tuesday" id="tuesday" value="tuesday"> Terça-feira
+                <br><input type="checkbox" name="wednesday" id="wednesday" value="wednesday"> Quarta-feira
+                <br><input type="checkbox" name="thursday" id="thursday" value="thursday"> Quinta-feira
+                <br><input type="checkbox" name="friday" id="friday" value="friday"> Sexta-feira
+                <br><input type="checkbox" name="saturday" id="saturday" value="saturday"> Sábado
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend>
+                <input type="radio" name="payment-method" value="Credit Card"> Cartão de crédito
+                <br><input type="radio" name="payment-method" value="Debit Card"> Cartão de Débito 
+                <br><input type="radio" name="payment-method" value="PIX"> PIX 
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o prazo para pagamento</legend>
+                <select name="deadline" id="deadline">
+                    <option value="cash" selected>Dinheiro / À vista</option>
+                    <option value="5x">5 vezes sem juros</option>
+                    <option value="10x">10 vezes com juros</option>
+                </select>
+            </fieldset>
+
+            <br>
+                <label for="comment">Comentário</label>
+                <br>
+                <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
+                <br>
+            <button>Salvar</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <footer>
+        Desenvolvido por Marlon Prado
+    </footer>
+
+
+
+</body>
+
+</html>

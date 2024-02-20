@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 03</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Dados do cliente</legend>
+            <label for="name">Nome</label>
+            <br>
+            <input type="text" name="name">
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email">
+        </fieldset>
+        <fieldset>
+            <legend>Serviços desejados</legend>
+            <label>
+                <input type="checkbox" name="compra-de-passagens" value="compra-de-passagens"> Compra de Passagens
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="reserva-de-hospedagens" value="reserva-de-hospedagens"> Reserva de
+                Hospedagens
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="aluguel-de-veiculos" value="aluguel-de-veiculos"> Aluguel de Veículos
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Selecione a forma de pagamento</legend>
+            <label>
+                <input type="radio" name="forma-de-pagamento" value="cartao-de-credito"> Cartão de crédito
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="forma-de-pagamento" value="boleto"> Boleto
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="forma-de-pagamento" value="pix"> PIX
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Selecione o prazo</legend>
+            <select name="prazos">
+                <option value="a-vista">À Vista</option>
+                <option value="5x">5 vezes sem júros</option>
+                <option value="10x">10 vezes com juros</option>
+            </select>
+        </fieldset>
+        <button type="submit">ENVIAR</button>
+    </form>
+</body>
+</html>
