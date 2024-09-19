@@ -21,3 +21,23 @@ console.log(recorte_final)
 
 let recorte_inicial = participantes.slice(0,12)
 console.log(recorte_inicial)
+
+// Exemplo de includes que verificar se uma string possui outra
+let frase = "Essa é a lista de alunos aprovados: Marlon, João, Pedro"
+let aprovado_ou_nao = frase.includes("Marlon")
+console.log(aprovado_ou_nao)
+
+// Exemplo de concat que junta strings
+let texto1 = "Olá "
+let texto2 = "Mundo"
+let frase_unida = texto1.concat(texto2)
+console.log(frase_unida)
+
+// Exemplo de trim que remove os espaços do início e do fim
+let texto_com_expacos = "   Meu nome é Marlon   "
+console.log(texto_com_expacos.trim())
+
+// Exemplo de split que separa a string de acordo com separador passado, tornando ela um array
+let texto_para_separar = "Marlon, João, Pedro, Henrique, Juliano"
+let lista_de_nomes = texto_para_separar.split(", ")
+console.log(lista_de_nomes)
